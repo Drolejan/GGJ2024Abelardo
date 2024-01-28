@@ -6,7 +6,7 @@ public class SonidoBoton : MonoBehaviour
 
 {
 
-    public AudioSource Fuente;
+    public AudioSource Fuente,cancion;
     public AudioClip Clip;
 
     // Start is called before the first frame update
@@ -24,5 +24,10 @@ public class SonidoBoton : MonoBehaviour
     public void Reproducir() 
     {
         Fuente.Play();
+    }
+
+    public void Parar()
+    {
+        cancion.Stop();
     }
 }
